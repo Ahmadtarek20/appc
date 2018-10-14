@@ -1,0 +1,112 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model Rest_Start.ViewModels.LoginViewModel
+<html>
+<head>
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Memoir a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" media="all" type="text/css" />
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <!-- Supportive-JavaScript -
+    <script src="~/js/modernizr.js"></script>->
+
+        <!-- //Supportive-JavaScript -->
+
+</head>
+<body>
+<!-- banner -->
+<div class="contact" id="contact">
+    <form asp-action="Login" asp-controller="Acount" method="post">
+        <div class="container">
+            <h3>LOGIN </h3>
+            <div class="w3l_l">
+                <input asp-for="UserName" type="text" placeholder="UserName" required="">
+            </div>
+            <div class="w3l_r">
+                <input asp-for="Password" type="text" placeholder="Password" required="">
+            </div>
+            <div class="clearfix"></div>
+            <div class="w3l_t">
+            </div>
+            <div class="w3l_butt">
+                <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+
+            <div class="w3l_butt">
+                <a class="btn btn-primary" asp-controller="Acount" asp-action="Regester">Regester</a>
+            </div>
+        </div>
+    </form>
+    <div class="wrapper">
+        <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
+            <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li> <a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li> <a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li> <a href="#"><i class="fa fa-rss"></i></a></li>
+        </ul>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+
+<script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/grayscale.js"></script>
+    <script src="~/js/jquery.easing.min.js"></script>
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/move-top.js"></script>
+    <script src="~/js/SmoothScroll.min.js"></script>
+
+    
+
+    <!-- Tour-Locations-JavaScript -->
+    <script src="~/js/classie.js"></script>
+    <script src="~/js/helper.js"></script>
+    <script src="~/js/grid3d.js"></script>
+    <script>
+        new grid3D(document.getElementById('grid3d'));
+    </script>
+    <!-- //Tour-Locations-JavaScript -->
+    <!-- Navigation-JavaScript -->
+    <script>
+        $(document).ready(function () {
+            $('.mobile-nav-button').on('click', function () {
+                $(".mobile-nav-button .mobile-nav-button__line:nth-of-type(1)").toggleClass("mobile-nav-button__line--1");
+                $(".mobile-nav-button .mobile-nav-button__line:nth-of-type(2)").toggleClass("mobile-nav-button__line--2");
+                $(".mobile-nav-button .mobile-nav-button__line:nth-of-type(3)").toggleClass("mobile-nav-button__line--3");
+
+                $('.mobile-menu').toggleClass('mobile-menu--open');
+                return false;
+            });
+        });
+    </script>
+    <!-- //Navigation-JavaScript -->
+    <!-- Top Hover-JS -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            /*
+                var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+                };
+            */
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
+    <!-- //here ends scrolling icon -->
+    <!-- smooth scrolling -->
+    <!-- scrolling script -->
+    <!-- /Top Hover-JS -->
+</body>
+</html>
